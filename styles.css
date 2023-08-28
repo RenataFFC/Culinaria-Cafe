@@ -1,0 +1,125 @@
+/* ... Estilos existentes ... */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,800;1,300;1,700&display=swap');
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.banner-overlay {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+
+  margin-bottom: 20px;
+}
+
+.banner p {
+   font-family: 'Open Sans', sans-serif;
+   font-size: 18px;
+   text-indent: 40px;
+   text-align: justify;
+}
+
+.banner-overlay img{
+    width: 100%;
+     height: 250px;
+
+}
+
+.banner-title {
+  position: relative;
+  text-align: center;
+   margin-top: 80px;
+   padding: 20px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: brown;
+  font-size: 2rem;
+  z-index: 2;
+}
+
+.recipes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.recipe {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  position: relative;
+}
+
+.recipe:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.recipe-title h2 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.recipe-icon {
+  background-color: #e74c3c;
+  color: white;
+  border-radius: 50%;
+  padding: 8px;
+  display: inline-block;
+  font-size: 1.2rem;
+}
+
+.recipe-content {
+  margin-top: 10px;
+}
+
+.recipe-ingredients,
+.recipe-instructions {
+  margin: 10px 0;
+}
+
+.recipe-ingredients h3,
+.recipe-instructions h3 {
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+
+.recipe-ingredients ul,
+.recipe-instructions ol {
+  list-style: none;
+  padding-left: 0;
+}
+
+.recipe-ingredients li,
+.recipe-instructions li {
+  margin-bottom: 5px;
+}
+
+/* Hover effect */
+.recipe:hover .recipe-icon {
+  background-color: #c0392b;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .recipes {
+    grid-template-columns: 1fr;
+  }
+}
