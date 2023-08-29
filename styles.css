@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,800;1,300;1,700&display=swap');
 
 
-
 .header{
   display: flex;
   flex-direction: row;
@@ -43,6 +42,15 @@
   color:#69452f;
 }
 
+
+.curiosidade{
+ width: 80%;
+ font-family: 'Open Sans', sans-serif;
+ font-size: 20px;
+ text-align: center;
+ margin-left: 50px;
+ padding: 8px 50px 8px;
+}
 
 .container-receitas {
   max-width: 1200px;
