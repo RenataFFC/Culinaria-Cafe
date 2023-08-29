@@ -2,6 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,800;1,300;1,700&display=swap');
 
+*{
+  font-family: 'Open Sans', sans-serif;
+  font-size:  22px;
+}
 
 .header{
   display: flex;
@@ -40,16 +44,16 @@
 .curisiosidade-title{
   text-align: center;
   color:#69452f;
+  font-size: 2rem;
 }
 
 
 .curiosidade{
  width: 80%;
  font-family: 'Open Sans', sans-serif;
- font-size: 20px;
+ font-size: 1rem;
  text-align: center;
- margin-left: 50px;
- padding: 8px 50px 8px;
+ margin: 0 auto;
 }
 
 .container-receitas {
@@ -193,6 +197,12 @@
 /* Responsividade */
 @media (max-width: 768px) {
 
+  .recipes{
+     width: 100%;
+     gap: 15px;
+
+  }
+
   .aluno{
     display: flex;
     flex-direction: column;
@@ -224,25 +234,28 @@
 
 .home-banner h1 {
   font-family: 'Open Sans', sans-serif;
-  font-size: 22px;
+  font-size: 1.300rem;
   text-align: center;
   padding: 10px 10px;
 }
 
 .curiosidade{
-   width: 300px;
+  width: 90%;
   font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
+  font-size: 0.980rem;
   text-align: justify;
-  margin: 0px;
-  padding: 8px 25px 8px;
+  padding: 0;
+  margin: 5px auto;
+  text-indent: 50px;
+
+  
 }
 
 .banner-title{
   font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
+  font-size: 0.980rem;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 60px;
  
 }
 
@@ -257,6 +270,9 @@
     display: inline;
   }
 
+  .curisiosidade-title{
+       font-size: 2rem;
+  }
  
   
 
